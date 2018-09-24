@@ -101,8 +101,15 @@ let ruff = dog.bark();
 //Return mySum.
 
 //Code Here
-// let finalGreeting = (name) => {return ("Hello, "+name)};
-let mySum = function looper(arr) {
+
+function looper(arr) {
+  let mySum = 0
+  for(let i = 0; i<arr.length; i++){
+    if(arr[i] % 2 !== 0 || arr[i] >= 100){
+    mySum = mySum + arr[i];
+    }
+  }
+  return mySum;
 };
 
 
@@ -117,6 +124,11 @@ function math(num1, num2, callback) {
 //Write a function called add that takes in two parameters and
 //returns the result of adding them together.
 //Code Here
+
+function add(num1, num2){
+  return num1 + num2;
+}
+
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
